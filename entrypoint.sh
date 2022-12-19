@@ -7,7 +7,7 @@ fi
 
 if [[ "$(which bandit)" == "" ]]; then
   echo "[action-bandit] Installing bandit package..."
-  python -m pip install --upgrade bandit[toml]
+  python3 -m pip install --upgrade bandit[toml]
 fi
 echo "[action-bandit] bandit version:"
 bandit --version
